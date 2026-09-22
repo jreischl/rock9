@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* Rock9 CSS Document */
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;500&family=Barlow+Semi+Condensed:wght@300&display=swap');
+
+	body {
+	    font-family: 'Barlow Semi Condensed', sans-serif;
+		line-height:2;
+		font-size: medium;
+	}
+	h1, h2, h3, h4, h5, h6 {
+	    font-family: 'Barlow Condensed', sans-serif;
+	}	
+	a {
+		color: #720606;
+	}
+	.btn-primary {
+		background: #9e1414;
+		border:none;
+	}
+	.btn-primary:hover {
+		background: #720606;
+		border:none;
+	}
+	a:active, a:hover {
+		color: #9e1414;
+	}
+	.artists {
+		background:rgba(255,255,255,.5);
+		text-align:center;
+		margin-top:30%;
+		padding-top:20px;	
+	}
+	.artists .constrainer {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1600px;
+	}
+	.artists .row {
+		margin:0;
+	}
+	.artists .heading {
+		margin:0 15px 15px; 
+		font-size:1.4em; 
+		text-transform:uppercase; 
+		letter-spacing:8px;
+	}
+	.artists .img-circle {
+		max-width: 100%;
+	    width: 140px;
+		margin:auto;
+		height:auto;	
+	}
+	body {
+		background:#333;
+	}
+	.feature-bg {
+		background:no-repeat top center / cover;
+		position:fixed;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		display:none;
+	}
+	.content {
+		position:relative;
+	}
+	#topNav {
+		margin-top:-100px;
+	}
+	.navbar {
+		margin: auto;
+		position: relative;
+		z-index: 20;		
+	}
+	.navbar > .container {
+		background:rgba(0,0,0,.25);
+		padding:0;
+
+
+	}
+	.navbar-brand {
+		background: url("../img/rock9-logo.png") no-repeat scroll 30px center / 60% auto;
+		display: block;
+		height: 90px;
+		margin: 0;
+		width: 160px;
+	}
+	.navbar-nav > li > a {
+	    font-family: 'Barlow Condensed', sans-serif;
+		padding:35px 12px;
+		color:#FFF;
+		font-size:1.2em;		
+		text-transform:uppercase;
+		letter-spacing:2px;
+	}
+	.navbar-nav > li > a:hover,
+	.navbar-nav > li > a:focus,
+	.navbar-nav > li > a:active,
+	.navbar-nav > li.open > a {
+		background:rgba(255,255,255,.9);
+		color:#9e1414;
+	}
+	.navbar-nav .dropdown-menu {
+		min-width:210px;
+	}
+	.navbar-nav .open .dropdown-menu {
+		background:#fff;
+	}
+	.navbar-nav .dropdown-menu a img {
+		display: inline-block;
+		height: auto;
+		margin-left: -12px;
+		margin-right:6px;
+		width: 40px;
+	}
+	.navbar-nav .open .dropdown-menu a img {
+		margin-left: 0;
+	}
+	.navbar-collapse {
+		padding:0;
+	}
+	.navbar-toggle .icon-bar {
+		background:#fff;
+	}
+	a.btn-promo {
+		background:rgba(255,255,255,.8);
+		border-left:#9e1414 4px solid;
+		display:block;
+		text-decoration:none;
+		padding:7px 16px;
+	}
+	a.btn-promo:hover {
+		background:rgba(255,255,255,1);
+	}
+	.btn-promo h5 {
+		color:rgba(0,0,0,.8);
+		margin-top:0;	
+		font-family: 'Open Sans', sans-serif;
+		font-weight:200;
+	}
+		
+	.bg-white {
+		background:#fff;
+	}
+	.margin-top {
+		margin-top:15px;
+	}
+	.margin-bottom {
+		margin-bottom:15px;
+	}
+	.padding-bottom {
+		padding-bottom:15px;
+	}
+
+	.social {
+		align-items: center;
+		display: flex;
+		justify-content: flex-end;
+		gap: 2rem;
+	}
+	a.social-icon {
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+		fill: #720606;
+	}
+
+
+
+	.footer {
+		background:#fff;
+		position:relative;
+		padding:15px;
+	}
+	.footer .social img {
+		max-width:24px;
+		height:auto;
+		margin-left:15px;
+		opacity:.8
+	}
+	.footer .social img:hover {
+		opacity:1
+	}
+	.footer .container {
+		border-top:1px dotted #ddd;
+		padding-top:15px;
+	}
+	
+	.tumblr_posts {
+		background:#eee;
+		padding:15px;
+		list-style:none;
+	}
+	.tumblr_posts img {
+		max-width:100%;
+	}
+	
+	.tmblr-iframe {
+		display:none;
+	}
+	
+.rss-feeds img {
+	max-width: 100%;
+}
+.rss-feeds ul, 
+.rss-feeds li {
+	list-style: none;
+	margin:23px 0;
+	padding: 0;
+}
+	.parallax-window {
+		min-height: 300px;
+		background: transparent;
+	}
+	
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+		.navbar {
+			margin-bottom: 0;
+		}
+		.navbar-brand {
+			background-position:15px center;
+		}
+		.navbar-nav > li > a {
+			padding: 35px 25px;
+		}
+		.feature-bg {
+			background-size:cover;
+		}
+		a.btn-promo {
+			border:none;
+			border-bottom:#9e1414 4px solid;
+			display:none;
+		}
+		.home a.btn-promo {
+			display:block;
+		}
+		.artists {
+			margin-top:0;
+		}
+		.artists .heading  {
+			font-size:small;
+			letter-spacing:4px;
+		}
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }
